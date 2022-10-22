@@ -1,0 +1,5 @@
+[Default Applications]
+font/ttf=nvim.desktop
+
+[Added Associations]
+font/ttf=nvim.desktop;
