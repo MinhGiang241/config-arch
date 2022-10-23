@@ -49,6 +49,7 @@ return require("packer").startup(function()
 	use("sunjon/shade.nvim")
 
 	-- ColorScheme
+	use("tanvirtin/monokai.nvim")
 	use("EdenEast/nightfox.nvim")
 
 	-- Telescope
@@ -61,6 +62,7 @@ return require("packer").startup(function()
 	use("nvim-treesitter/nvim-treesitter-refactor")
 	use("p00f/nvim-ts-rainbow")
 	use("windwp/nvim-autopairs")
+	use("windwp/nvim-ts-autotag")
 
 	-- LSP plugins
 	use("neovim/nvim-lspconfig")

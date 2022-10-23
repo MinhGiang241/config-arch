@@ -40,14 +40,17 @@ local options = {
 	smarttab = true,
 	incsearch = true,
 	ignorecase = true,
-	wrap = false,
+	wrap = true,
 	termguicolors = true,
 	cursorline = true,
-	hidden = true,
+	guicursor = "n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20",
+	--hidden = true,
 }
 
 vim.notify = require("notify")
 --vim.opt.shortmess:append "c"
+--vim.cmd([[hi MatchParen guifg=Yellow guibg=NONE gui=bold]])
+--vim.cmd([[hi MatchParen ctermfg=Yellow ctermbg=NONE cterm=bold]])
 
 for k, v in pairs(options) do
 	vim.opt[k] = v

@@ -104,6 +104,11 @@ _G.packer_plugins = {
     path = "/home/minhgiang/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
+  ["monokai.nvim"] = {
+    loaded = true,
+    path = "/home/minhgiang/.local/share/nvim/site/pack/packer/start/monokai.nvim",
+    url = "https://github.com/tanvirtin/monokai.nvim"
+  },
   ["nightfox.nvim"] = {
     loaded = true,
     path = "/home/minhgiang/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
@@ -153,6 +158,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/minhgiang/.local/share/nvim/site/pack/packer/start/nvim-treesitter-refactor",
     url = "https://github.com/nvim-treesitter/nvim-treesitter-refactor"
+  },
+  ["nvim-ts-autotag"] = {
+    loaded = true,
+    path = "/home/minhgiang/.local/share/nvim/site/pack/packer/start/nvim-ts-autotag",
+    url = "https://github.com/windwp/nvim-ts-autotag"
   },
   ["nvim-ts-rainbow"] = {
     loaded = true,
