@@ -47,7 +47,7 @@ return require("packer").startup(function()
 	use("romgrk/barbar.nvim")
 	use("jose-elias-alvarez/null-ls.nvim")
 	use("sunjon/shade.nvim")
-
+	use("lukas-reineke/indent-blankline.nvim")
 	-- ColorScheme
 	use("tanvirtin/monokai.nvim")
 	use("EdenEast/nightfox.nvim")
