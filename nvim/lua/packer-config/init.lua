@@ -60,6 +60,7 @@ return require("packer").startup(function()
 	-- Tree sitter
 	use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
 	use("nvim-treesitter/nvim-treesitter-refactor")
+	use("nvim-treesitter/playground")
 	use("p00f/nvim-ts-rainbow")
 	use("windwp/nvim-autopairs")
 	use("windwp/nvim-ts-autotag")
