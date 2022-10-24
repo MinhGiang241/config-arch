@@ -1,5 +1,4 @@
 
-
 # Copyright (c) 2010 Aldo Cortesi
 # Copyright (c) 2010, 2014 dequis
 # Copyright (c) 2012 Randall Ma
@@ -39,7 +38,7 @@ from colors import gruvbox
 from bar2 import bar
 
 
-mod = "mod4"
+mod = "mod1"
 terminal = guess_terminal()
 
 keys = [

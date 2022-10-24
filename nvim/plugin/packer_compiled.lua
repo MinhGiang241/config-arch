@@ -134,6 +134,16 @@ _G.packer_plugins = {
     path = "/home/minhgiang/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
+  ["nvim-colorizer.lua"] = {
+    loaded = true,
+    path = "/home/minhgiang/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
+    url = "https://github.com/norcalli/nvim-colorizer.lua"
+  },
+  ["nvim-hlslens"] = {
+    loaded = true,
+    path = "/home/minhgiang/.local/share/nvim/site/pack/packer/start/nvim-hlslens",
+    url = "https://github.com/kevinhwang91/nvim-hlslens"
+  },
   ["nvim-lsp-installer"] = {
     loaded = true,
     path = "/home/minhgiang/.local/share/nvim/site/pack/packer/start/nvim-lsp-installer",
@@ -148,6 +158,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/minhgiang/.local/share/nvim/site/pack/packer/start/nvim-notify",
     url = "https://github.com/rcarriga/nvim-notify"
+  },
+  ["nvim-scrollbar"] = {
+    loaded = true,
+    path = "/home/minhgiang/.local/share/nvim/site/pack/packer/start/nvim-scrollbar",
+    url = "https://github.com/petertriho/nvim-scrollbar"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
@@ -208,6 +223,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/minhgiang/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["tokyonight.nvim"] = {
+    loaded = true,
+    path = "/home/minhgiang/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
+    url = "https://github.com/folke/tokyonight.nvim"
   }
 }
 

@@ -48,9 +48,15 @@ return require("packer").startup(function()
 	use("jose-elias-alvarez/null-ls.nvim")
 	use("sunjon/shade.nvim")
 	use("lukas-reineke/indent-blankline.nvim")
+	use("norcalli/nvim-colorizer.lua")
+	use("petertriho/nvim-scrollbar")
+	use("kevinhwang91/nvim-hlslens")
+
 	-- ColorScheme
+
 	use("tanvirtin/monokai.nvim")
 	use("EdenEast/nightfox.nvim")
+	use("folke/tokyonight.nvim")
 
 	-- Telescope
 	use("nvim-telescope/telescope.nvim")
