@@ -17,6 +17,7 @@ nord_fox = {
 }
 
 gruvbox = {
+    'white':        "#e5e9f0",
     'bg':           '#282828',
     'fg':           '#d4be98',
     'dark-red':     '#ea6962',

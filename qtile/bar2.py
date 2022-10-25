@@ -38,9 +38,9 @@ bar = Bar([
     Spacer(length=10),
 
     left_half_circle(gruvbox['cyan']),
-    Clock(
+    Net(
         background=gruvbox['cyan'],
-        format=' %Y-%m-%d %a %I:%M %p'),
+    ),
     right_half_circle(gruvbox['cyan']),
 
     Spacer(length=10),
@@ -100,7 +100,7 @@ bar = Bar([
 
     left_half_circle(gruvbox['dark-blue']),
     Clock(
-        format='%d-%m-%Y %a %I:%M %p',
+        format=' %d-%m-%Y %a %I:%M %p',
         background=gruvbox['dark-blue']
     ),
     right_half_circle(gruvbox['dark-blue']),

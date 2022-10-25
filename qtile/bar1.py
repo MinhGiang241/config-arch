@@ -9,6 +9,8 @@ from libqtile.widget.spacer import Spacer
 from libqtile.widget.systray import Systray
 from libqtile.widget.window_count import WindowCount
 from libqtile.widget.windowname import WindowName
+from libqtile.widget.quick_exit import QuickExit
+from libqtile.widget.prompt import Prompt
 
 from unicodes import right_arrow, left_arrow
 from colors import gruvbox
@@ -24,51 +26,57 @@ bar = Bar([
         highlight_color=gruvbox['bg'],
         background=gruvbox['bg']
     ),
-    right_arrow(gruvbox['fg0'], gruvbox['bg']),
+    right_arrow(gruvbox['magenta'], gruvbox['bg']),
     CurrentLayout(
-        background=gruvbox['fg0'],
-        foreground=gruvbox['fg9']
+        background=gruvbox['magenta'],
+        foreground=gruvbox['white']
     ),
-    right_arrow(gruvbox['bg0'], gruvbox['fg0']),
+    right_arrow(gruvbox['bg0'], gruvbox['magenta']),
 
     WindowCount(
         text_format='缾 {num}',
-        background=gruvbox['gray'],
-        foreground=gruvbox['fg9'],
+        background=gruvbox['bg0'],
+        foreground=gruvbox['white'],
         show_zero=True,
     ),
 
     right_arrow(gruvbox['bg'], gruvbox['bg0']),
     WindowName(foreground=gruvbox['fg']),
 
-    left_arrow(gruvbox['bg'], gruvbox['fg1']),
+    left_arrow(gruvbox['bg'], gruvbox['dark-yellow']),
+    Prompt(background=gruvbox['dark-yellow']),
+
+
+    left_arrow(gruvbox['dark-yellow'], gruvbox['dark-green']),
     CPU(
         format=' {freq_current}GHz {load_percent}%',
-        background=gruvbox['fg1'],
-        foreground=gruvbox['dark-green']
+        background=gruvbox['dark-green'],
+        foreground=gruvbox['white']
     ),
 
-    left_arrow(gruvbox['fg1'], gruvbox['fg2']),
+    left_arrow(gruvbox['dark-green'], gruvbox['cyan']),
     Memory(
-        format=' {Memd: .0f}{mm}/{MemTotal: .0f}{mm}',
-        background=gruvbox['fg2'],
-        foreground=gruvbox['yellow']
+        format=' {MemUsed: .0f}{mm}/{MemTotal: .0f}{mm}',
+        background=gruvbox['cyan'],
+        foreground=gruvbox['white']
     ),
 
-    left_arrow(gruvbox['fg2'], gruvbox['fg3']),
+    left_arrow(gruvbox['cyan'], gruvbox['dark-blue']),
     Net(
-        background=gruvbox['fg3'],
-        foreground=gruvbox['dark-blue']
+        background=gruvbox['dark-blue'],
+        foreground=gruvbox['white']
     ),
 
-    left_arrow(gruvbox['fg3'], gruvbox['bg0']),
+    left_arrow(gruvbox['dark-blue'], gruvbox['dark-magenta']),
     Clock(
-        background=gruvbox['bg0'],
-        foreground=gruvbox['dark-magenta'],
+        background=gruvbox['dark-magenta'],
+        foreground=gruvbox['white'],
         format=' %Y-%m-%d %a %I:%M %p'
     ),
 
-    left_arrow(gruvbox['bg0'], gruvbox['fg0']),
+    left_arrow(gruvbox['dark-magenta'], gruvbox['dark-red']),
+    QuickExit(background=gruvbox['dark-red']),
+    left_arrow(gruvbox['dark-red'], gruvbox['fg0']),
     Systray(
         background=gruvbox['fg0']
     ),

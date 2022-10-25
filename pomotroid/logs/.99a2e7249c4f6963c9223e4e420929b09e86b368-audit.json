@@ -1,0 +1,14 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/home/minhgiang/.config/pomotroid/logs/.99a2e7249c4f6963c9223e4e420929b09e86b368-audit.json",
+    "files": [
+        {
+            "date": 1666710363187,
+            "name": "/home/minhgiang/.config/pomotroid/logs/pomotroid-2022-10-25.log",
+            "hash": "e7ba3920434fcd4bfa8e060e074be187"
+        }
+    ]
+}

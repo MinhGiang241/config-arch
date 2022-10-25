@@ -26,16 +26,16 @@
 # SOFTWARE.
 
 
-from libqtile import bar,  widget
+from libqtile import bar
 from libqtile.layout.columns import Columns
 from libqtile.layout.xmonad import MonadTall
 from libqtile.layout.floating import Floating
 from libqtile.layout.max import Max
-from libqtile.config import Click, Drag, Group, Key, Match, Screen
+from libqtile.config import Click, Drag, Group, Key, Match, Screen,  ScratchPad, DropDown
 from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
 from colors import gruvbox
-from bar2 import bar
+from bar1 import bar
 
 
 mod = "mod1"
@@ -159,6 +159,24 @@ widget_defaults = dict(
     padding=3,
 )
 extension_defaults = widget_defaults.copy()
+# Append scratchpad with dropdowns to groups
+groups.append(ScratchPad('scratchpad', [
+    DropDown('term', 'xterm-256color', width=0.4,
+             height=0.5, x=0.3, y=0.1, opacity=1),
+    DropDown('mixer', 'pavucontrol', width=0.4,
+             height=0.6, x=0.3, y=0.1, opacity=1),
+    DropDown('pomo', 'pomotroid', x=0.4, y=0.2, opacity=1),
+    DropDown('thu', 'Thunar',
+             width=0.4, height=0.6, x=0.3, y=0.1, opacity=1),
+]))
+
+# extend keys list with keybinding for scratchpad
+keys.extend([
+    Key(["control"], "1", lazy.group['scratchpad'].dropdown_toggle('term')),
+    Key(["control"], "2", lazy.group['scratchpad'].dropdown_toggle('mixer')),
+    Key(["control"], "3", lazy.group['scratchpad'].dropdown_toggle('pomo')),
+    Key(["control"], "4", lazy.group['scratchpad'].dropdown_toggle('thu')),
+])
 
 screens = [
     Screen(top=bar)
