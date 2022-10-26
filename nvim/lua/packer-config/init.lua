@@ -51,7 +51,11 @@ return require("packer").startup(function()
 	use("norcalli/nvim-colorizer.lua")
 	use("petertriho/nvim-scrollbar")
 	use("kevinhwang91/nvim-hlslens")
-
+	use("numToStr/Comment.nvim")
+	use("lewis6991/gitsigns.nvim")
+	use("williamboman/mason.nvim")
+	use("folke/which-key.nvim")
+	use("linty-org/key-menu.nvim")
 	-- ColorScheme
 
 	use("tanvirtin/monokai.nvim")
@@ -79,5 +83,7 @@ return require("packer").startup(function()
 	use("L3MON4D3/LuaSnip") -- Snippets plugin
 	use("onsails/lspkind.nvim") --vscode like icon
 	use("williamboman/nvim-lsp-installer") -- manage language server
+	use("williamboman/mason.nvim")
+	use("mhartington/formatter.nvim")
 end)
 -- disable netrw at the very start of your init.lua (strongly advised)

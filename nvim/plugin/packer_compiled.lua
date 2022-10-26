@@ -74,6 +74,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["Comment.nvim"] = {
+    loaded = true,
+    path = "/home/minhgiang/.local/share/nvim/site/pack/packer/start/Comment.nvim",
+    url = "https://github.com/numToStr/Comment.nvim"
+  },
   LuaSnip = {
     loaded = true,
     path = "/home/minhgiang/.local/share/nvim/site/pack/packer/start/LuaSnip",
@@ -94,10 +99,25 @@ _G.packer_plugins = {
     path = "/home/minhgiang/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["formatter.nvim"] = {
+    loaded = true,
+    path = "/home/minhgiang/.local/share/nvim/site/pack/packer/start/formatter.nvim",
+    url = "https://github.com/mhartington/formatter.nvim"
+  },
+  ["gitsigns.nvim"] = {
+    loaded = true,
+    path = "/home/minhgiang/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
+    url = "https://github.com/lewis6991/gitsigns.nvim"
+  },
   ["indent-blankline.nvim"] = {
     loaded = true,
     path = "/home/minhgiang/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
+  },
+  ["key-menu.nvim"] = {
+    loaded = true,
+    path = "/home/minhgiang/.local/share/nvim/site/pack/packer/start/key-menu.nvim",
+    url = "https://github.com/linty-org/key-menu.nvim"
   },
   ["lspkind.nvim"] = {
     loaded = true,
@@ -108,6 +128,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/minhgiang/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
+  ["mason.nvim"] = {
+    loaded = true,
+    path = "/home/minhgiang/.local/share/nvim/site/pack/packer/start/mason.nvim",
+    url = "https://github.com/williamboman/mason.nvim"
   },
   ["monokai.nvim"] = {
     loaded = true,
@@ -228,6 +253,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/minhgiang/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
+  },
+  ["which-key.nvim"] = {
+    loaded = true,
+    path = "/home/minhgiang/.local/share/nvim/site/pack/packer/start/which-key.nvim",
+    url = "https://github.com/folke/which-key.nvim"
   }
 }
 
